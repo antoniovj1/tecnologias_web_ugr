@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-jun-2016, 2:41:18
+    Author     : Antonio de la Vega
+*/
+
+html, body {
+    height: 96%; 
+    width: 100%; 
+    margin: 0;
+}
+
+
+header {
+    height: 5%;
+    width: 100%;
+
+}
+
+table {
+    border-width: 1px 0 2px;
+    margin-bottom: 2em;
+    margin-left: 15px;
+    width: 98%;
+    border-bottom: 5px;
+    border-bottom-color: #76A4A0;
+    border-collapse: collapse;
+    border-top-color: #76A4A0;
+    empty-cells: show;
+    text-align: left;
+    background-color: #76A4A0;
+    border-style: solid;
+    height: 63%;
+}
+
+th {
+    padding: 4px 1em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-bottom: 15px solid #FFFFFF;
+    text-align: center;
+    font-size: 2.5vw;
+    height: 15%;
+}
+
+td {
+    padding: 4px;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    color: #404040;
+    text-align: center;
+    font-size: 2vw;
+    height: 12%;
+}
+
+.par {
+    background-color: #F0F0F0;
+}
+
+.impar {
+    background-color: #FFFFFF;
+}
+
+.img_cab {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    height: 100%;
+    width: auto;
+}
+
+.img_pie {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
+    width: auto;
+}
+
+
+.izquierda{
+    border-right: 15px solid #FFFFFF;
+}
+
+.derecha{
+    border-left: 25px solid #FFFFFF;
+}
+
+.alertas{
+    border: solid 4px #76A4A0;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #E25226;
+    height: 9%;
+    font-size: 2vw;
+}
+
+/* Make it a marquee */
+.marquee {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 18s linear infinite;
+}
+
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 100% }
+    100% { text-indent: -100em }
+}
+
+.interior_alertas{
+    color: #000;
+    letter-spacing: 0px;
+    font-weight: normal;
+    font-size: 2vw;
+}
+
+footer {
+    background-color: #E25226;
+    border-top: solid 55px #FFFFFF; 
+    height: 5%;    
+}
+
+.clock {
+    color: black;
+    font-family: 'Raleway',sans-serif;
+    font-size: 250%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3vw;
+}
