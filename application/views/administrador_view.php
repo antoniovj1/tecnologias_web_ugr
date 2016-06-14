@@ -37,7 +37,26 @@
         <h1 id="titulo_pagina"><span class="texto_titulo">Administrador</span></h1>
         <div id="contenido" class="sec_interior">
             <div class="content_doku">
+                <div class='mod-forms'>
+                    <table class='inline'>
+                        <tbody>
+                            <tr>
+                                <th class='centeralign'>Nombre</th>
+                                <th class='centeralign'>Email</th>
+                                <th class='centeralign'>Rol</th>
+                            </tr>
 
+                            <?php foreach ($usuarios as $usuario): ?>
+                                <tr onclick="location.href = '<?php echo base_url(); ?>index.php/administrador/modificar_eliminar_usuario/<?php echo $usuario['id_usuario']; ?>'" style='border-top: 1px solid #000;'>
+                                    <td class='par'><?php echo $usuario['nombre'] . " " . $usuario['apellidos']; ?></td>
+                                    <td class='par'><?php echo $usuario['email']; ?></td>
+                                    <td class='par'><?php echo $usuario['nombre_rol']; ?></a></td>
+                                </tr>
+                            <?php endforeach; ?>
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

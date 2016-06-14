@@ -29,8 +29,10 @@ class Administrador extends CI_Controller {
      * Carga la página principal
      */
     public function index() {
+        $data['usuarios'] = $this->usuario_model->get_usuarios($this->session->userdata('id_usuario'));
+
         $this->load->view('templates/header');
-        $this->load->view('administrador_view');
+        $this->load->view('administrador_view', $data);
         $this->load->view('templates/footer');
     }
 
