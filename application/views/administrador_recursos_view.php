@@ -49,9 +49,9 @@
 
                                 <?php foreach ($recursos as $recurso): ?>
                                     <tr onclick="location.href = '<?php echo base_url(); ?>index.php/administrador/modificar_eliminar_recurso/<?php echo $recurso['id_recurso']; ?>'" style='border-top: 1px solid #000;'>
-                                        <td class='par'><?php echo $recurso['nombre'] . " " . $recurso['apellidos']; ?></td>
-                                        <td class='par'><?php echo $recurso['fecha_ini']; ?> hasta <?php echo $recurso['fecha_fin']; ?></td>
-                                        <td class='par'><?php echo $recurso['asignatura']; ?></a></td>
+                                        <td class='par centeralign'><?php echo $recurso['nombre'] . " " . $recurso['apellidos']; ?></td>
+                                        <td class='par centeralign'><?php echo $recurso['fecha_ini']; ?> hasta <?php echo $recurso['fecha_fin']; ?></td>
+                                        <td class='par centeralign'><?php echo $recurso['asignatura']; ?></a></td>
                                     </tr>
                                 <?php endforeach; ?>
 

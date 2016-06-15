@@ -344,8 +344,8 @@ $(document).ready(function () {
 
             },
             nick: {
-                required: "<label class='error_validacion'>Introduzca el nick</label>",
-                remote: "<label class='error_validacion'>El nick ya está en uso</label>",
+                required: "<label class='error_validacion'>Introduzca el nombre de usuario</label>",
+                remote: "<label class='error_validacion'>El nombre de usuario ya está en uso</label>",
                 maxlength: "<label class='error_validacion'>Demasiados caracteres. Max 30</label>"
 
             },
@@ -421,8 +421,8 @@ $(document).ready(function () {
 
             },
             nick: {
-                required: "<label class='error_validacion'>Introduzca el nick</label>",
-                remote: "<label class='error_validacion'>El nick ya está en uso</label>",
+                required: "<label class='error_validacion'>Introduzca el nombre de usuario</label>",
+                remote: "<label class='error_validacion'>El nombre de usuario ya está en uso</label>",
                 maxlength: "<label class='error_validacion'>Demasiados caracteres. Max 30</label>"
 
             },
@@ -513,8 +513,8 @@ $(document).ready(function () {
 
             },
             nick: {
-                required: "<label class='error_validacion'>Introduzca el nick</label>",
-                remote: "<label class='error_validacion'>El nick ya está en uso</label>",
+                required: "<label class='error_validacion'>Introduzca el nombre de usuario</label>",
+                remote: "<label class='error_validacion'>El nombre de usuario ya está en uso</label>",
                 maxlength: "<label class='error_validacion'>Demasiados caracteres. Max 30</label>"
 
             },
@@ -656,8 +656,8 @@ $(document).ready(function () {
                 maxlength: "<label class='error_validacion'>Máximo 50 caracteres</label>"
             },
             nick: {
-                required: "<label class='error_validacion'>Introduzca el nick</label>",
-                remote: "<label class='error_validacion'>El nick no existe o no corresponde a un profesor</label>"
+                required: "<label class='error_validacion'>Introduzca el nombre de usuario</label>",
+                remote: "<label class='error_validacion'>El nombre de usuario no existe o no corresponde a un profesor</label>"
             }
         },
         submitHandler: function (form) {
@@ -666,6 +666,7 @@ $(document).ready(function () {
     });
 
     $("#login").validate({
+        onkeyup: false,
         rules: {
             nick: "required",
             passw: {
@@ -692,7 +693,7 @@ $(document).ready(function () {
                 remote: "<label class='error_validacion'>Usuario o contraseña no valido.</label>",
                 minlength: "<label class='error_validacion'>Your password must be at least 5 characters long</label>"
             },
-            nick: "<label class='error_validacion'>El nick no es valido</label>"
+            nick: "<label class='error_validacion'>El nombre de usuario no es valido</label>"
         },
         submitHandler: function (form) {
             form.submit();

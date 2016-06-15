@@ -48,8 +48,8 @@
 
                             <?php foreach ($alertas as $alerta): ?>
                                 <tr onclick="location.href = '<?php echo base_url(); ?>index.php/profesor/modificar_eliminar_alerta/<?php echo $alerta['id_alerta']; ?>'" style='border-top: 1px solid #000;'>
-                                    <td class='par'><?php echo $alerta['mensaje']; ?></td> 
-                                    <td class='par'><?php echo $alerta['created_at']; ?> </td>
+                                    <td class='par centeralign'><?php echo $alerta['mensaje']; ?></td> 
+                                    <td class='par centeralign'><?php echo $alerta['created_at']; ?> </td>
                                 </tr>
                             <?php endforeach; ?>
 

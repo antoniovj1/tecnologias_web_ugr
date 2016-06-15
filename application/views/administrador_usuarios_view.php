@@ -49,9 +49,9 @@
 
                             <?php foreach ($usuarios as $usuario): ?>
                                 <tr onclick="location.href = '<?php echo base_url(); ?>index.php/administrador/modificar_eliminar_usuario/<?php echo $usuario['id_usuario']; ?>'" style='border-top: 1px solid #000;'>
-                                    <td class='par'><?php echo $usuario['nombre'] . " " . $usuario['apellidos']; ?></td>
-                                    <td class='par'><?php echo $usuario['email']; ?></td>
-                                    <td class='par'><?php echo $usuario['nombre_rol']; ?></a></td>
+                                    <td class='par centeralign'><?php echo $usuario['nombre'] . " " . $usuario['apellidos']; ?></td>
+                                    <td class='par centeralign'><?php echo $usuario['email']; ?></td>
+                                    <td class='par centeralign'><?php echo $usuario['nombre_rol']; ?></a></td>
                                 </tr>
                             <?php endforeach; ?>
 
