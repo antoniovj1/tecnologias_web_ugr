@@ -94,13 +94,15 @@ class Usuario_model extends CI_Model {
             $this->db->select('usuarios.id_usuario,usuarios.nombre,usuarios.apellidos,usuarios.email,usuarios.nick, roles.*')
                     ->from('usuarios')
                     ->join('rol_usuario', 'usuarios.id_usuario = rol_usuario.id_usuario', 'inner')
-                    ->join('roles', 'rol_usuario.id_rol = roles.id_rol');
+                    ->join('roles', 'rol_usuario.id_rol = roles.id_rol')
+                    ->order_by('usuarios.nombre', 'ASC');
         } else {
             $this->db->select('usuarios.id_usuario,usuarios.nombre,usuarios.apellidos,usuarios.email,usuarios.nick, roles.*')
                     ->from('usuarios')
                     ->join('rol_usuario', 'usuarios.id_usuario = rol_usuario.id_usuario', 'inner')
                     ->join('roles', 'rol_usuario.id_rol = roles.id_rol')
-                    ->where('usuarios.id_usuario !=',$id_usuario);
+                    ->where('usuarios.id_usuario !=',$id_usuario)
+                    ->order_by('usuarios.nombre', 'ASC');
         }
         return $this->db->get()->result_array();
     }
