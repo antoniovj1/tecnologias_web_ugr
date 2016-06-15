@@ -74,15 +74,15 @@ jQuery.validator.addMethod("nombreapellido", function (value, element) {
  */
 jQuery.validator.addMethod("datetime", function (value, element) {
     var matches = value.match(/^(\d{4})\/(\d{2})\/(\d{2}) (\d{2}):(\d{2})$/);
-    if (matches === null){
+    if (matches === null) {
         matches = value.match(/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})$/);
     }
-    
+
     var matches2 = value.match(/^(\d{4})\/(\d{2})\/(\d{2}) (\d{2}):(\d{2}):(\d{2})$/);
-    if(matches2 === null){
+    if (matches2 === null) {
         matches2 = value.match(/^(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2})$/);
     }
-    
+
     if (matches === null && matches2 === null) {
         return false;
 
@@ -192,6 +192,9 @@ $(document).ready(function () {
 
 
     $("#crear-cita").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             nombre: {
                 required: true,
@@ -256,6 +259,9 @@ $(document).ready(function () {
 
 
     $("#alerta").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             mensaje: {
                 required: true,
@@ -276,6 +282,9 @@ $(document).ready(function () {
     });
 
     $("#alta-usuario").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             nombre: {
                 required: true,
@@ -357,6 +366,9 @@ $(document).ready(function () {
     });
 
     $("#perfil-profesor").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             nombre: {
                 required: true,
@@ -435,6 +447,9 @@ $(document).ready(function () {
 
 
     $("#detalles-usuario").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             nombre: {
                 required: true,
@@ -526,6 +541,9 @@ $(document).ready(function () {
     });
 
     $("#consultar-turno").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             codigo: {
                 required: true,
@@ -546,6 +564,9 @@ $(document).ready(function () {
         }
     });
     $("#crear-recurso").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             lugar: {
                 required: true,
@@ -600,6 +621,9 @@ $(document).ready(function () {
     });
 
     $("#crear-recurso-admin").validate({
+        onfocusout: function (element) {
+            this.element(element);
+        },
         rules: {
             lugar: {
                 required: true,
@@ -666,6 +690,7 @@ $(document).ready(function () {
     });
 
     $("#login").validate({
+        onfocusout: false,
         onkeyup: false,
         rules: {
             nick: "required",
