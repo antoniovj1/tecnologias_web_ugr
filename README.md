@@ -20,11 +20,11 @@ En el archivo de la base de datos se incluye un usuario de tipo administrador, l
 
 >Las validaciones se encuentran todas juntas en `public/js/validaciones.js` ( Por facilidad para elaborar la práctica).
 
->Las partes comunes a todas la páginas se encuentran en `application/views/templates` ( Debido a que no se ha usado ningún motor de plantillas la estructura de las vistas no es la mejor...
+>Las partes comunes a todas la páginas se encuentran en `application/views/templates` ( Debido a que no se ha usado ningún motor de plantillas la estructura de las vistas no es la mejor... )
 
 > Las vistas y css están basados en [DECSAI](http://decsai.ugr.es)
 
->Debido a que es el primer desarrollo de este tipo (y las prisas) es posible que haya errores.
+
 
 ___
 ###### Universidad de Granada (UGR)
